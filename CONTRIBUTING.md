@@ -79,4 +79,7 @@ Whether you’re fixing a bug, adding a feature, or improving documentation, you
 - Open an issue describing your question or problem.
 - Use the Discussion tab for general questions or brainstorming.
 
+## 📢 Join Official Slack channel for Discussion about the project : [Code Script](https://join.slack.com/t/codescriptgroup/shared_invite/zt-3e3wkqsvm-fXh7_Yrnrq1JThf7AW55Fg)
+
+
 Thank you for helping make this project better! 🚀
