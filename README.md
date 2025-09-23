@@ -5,6 +5,9 @@ Here, anyone can contribute simple, fun, and useful scripts in **Python, JavaScr
 
 ---
 
+## 📢 Join Official Slack channel for Discussion about the project : [Code Script](https://join.slack.com/t/codescriptgroup/shared_invite/zt-3e3wkqsvm-fXh7_Yrnrq1JThf7AW55Fg)
+
+
 ## 🌟 Example Scripts
 - Python → BMI Calculator, Password Generator  
 - JavaScript → Countdown Timer, Tip Calculator  
