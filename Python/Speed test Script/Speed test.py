@@ -3,6 +3,7 @@ import argparse
 import csv
 import json
 from datetime import datetime
+import sys
 
 def test_speed():
     st = speedtest.Speedtest()
@@ -41,10 +42,13 @@ def save_json(data, filename="results.json"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Internet Speed Test & Logger")
     parser.add_argument("--save", choices=["csv", "json"], help="Save results to CSV or JSON")
-    args = parser.parse_args()
+
+    # ✅ Ignore unwanted Colab/Jupyter args like -f kernel.json
+    args, unknown = parser.parse_known_args(sys.argv[1:])
 
     print("🚀 Running speed test... please wait.\n")
     results = test_speed()
+
     print(f"Download Speed: {results['download_mbps']} Mbps")
     print(f"Upload Speed:   {results['upload_mbps']} Mbps")
     print(f"Ping:           {results['ping_ms']} ms")
