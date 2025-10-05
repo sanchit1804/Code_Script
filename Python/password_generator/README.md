@@ -18,7 +18,7 @@ A secure Python script to generate strong, customizable passwords.
 Run the script via terminal:
 
 ```bash
-python password_generator.py
+python Python/password_generator/password_generator.py
 ```
 
 Follow the prompts to select your desired password length and character types.
