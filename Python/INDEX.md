@@ -18,6 +18,19 @@ This directory contains Python scripts contributed to the Code_Script repository
 
 ---
 
+### 2. QR Code Scanner
+**Path:** `Python/qr_code_scanner/`  
+**Description:** Simple script that scans and decodes QR codes from image files.  
+**Features:**
+- Detects and decodes one or multiple QR codes in an image  
+- Displays decoded text or URL directly in the terminal  
+- Uses `opencv-python`, `pyzbar`, and `Pillow`  
+- Beginner-friendly and easy to extend  
+
+**Usage:** See [qr_code_scanner/README.md](qr_code_scanner/README.md)
+
+---
+
 ## 🚀 How to Use
 
 Each script has its own directory with:
@@ -43,4 +56,4 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for more details.
 
 ---
 
-**Last Updated:** October 5, 2025
+**Last Updated:** October 7, 2025
