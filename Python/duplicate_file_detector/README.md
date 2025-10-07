@@ -41,5 +41,5 @@ No external libraries needed.
 
 
 ## 👨‍💻 Author
-Ashutosh Agarwal(github:https://github.com/Ashutosh-agarwal2004)
+Ashutosh Agarwal(https://github.com/Ashutosh-agarwal2004)
 
