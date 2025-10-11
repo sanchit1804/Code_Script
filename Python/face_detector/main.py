@@ -14,7 +14,7 @@ FD_SCALE_FACTOR: float = 1.2
 FACEBOX_COLOR: tuple[int, int, int] = (255, 0, 0)
 FACEBOX_THICKNESS: int = 2
 
-TEXT_DEFAULT_SIZE = 25  # don't touch, corresponds to font width at scale=0TEXT_MARGIN: int = 5
+TEXT_DEFAULT_SIZE = 25  # don't touch, corresponds to font width at scale=0
 TEXT_COEFF: int = 200
 TEXT_MARGIN = 5
 TEXT_FONT = cv.FONT_HERSHEY_SIMPLEX
@@ -27,11 +27,11 @@ MATCH_MAX_DISTANCE: int = 150
 FPS_COLOR: tuple[int, int, int] = (0, 255, 0)
 FPS_FONT_SCALE: float = 0.8
 FPS_THICKNESS: int = 1
-FPS_POSITION: tuple[int, int] = (0, int(TEXT_DEFAULT_SIZE * FPS_FONT_SCALE))  # верхний левый угол
+FPS_POSITION: tuple[int, int] = (0, int(TEXT_DEFAULT_SIZE * FPS_FONT_SCALE))
 FPS_FONT = cv.FONT_HERSHEY_SIMPLEX
 
 # === DATA CLASS ===
-@dataclass
+@dataclass()
 class FaceBox:
     x: int = 0
     y: int = 0
