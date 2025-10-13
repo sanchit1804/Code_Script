@@ -1,4 +1,4 @@
-# 📨 Bulk Email Sender — Pro+ Edition
+# 📨 Bulk Email Sender 
 
 A modern **Streamlit web application** that allows users to send **personalized bulk emails** with optional attachments, Gmail App Password authentication, and live progress tracking.
 
