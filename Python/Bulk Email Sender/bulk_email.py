@@ -9,8 +9,8 @@ import time
 import os
 
 # ---------------- Streamlit Page Config ----------------
-st.set_page_config(page_title="📧 Bulk Email Pro+ Dashboard", page_icon="📨", layout="centered")
-st.title("📨 Bulk Email Sender — Pro+ Edition")
+st.set_page_config(page_title="📧 Bulk Email Dashboard", page_icon="📨", layout="centered")
+st.title("📨 Bulk Email Sender")
 st.caption("Send personalized bulk emails with live logs, attachments, and custom names")
 
 st.markdown("---")
