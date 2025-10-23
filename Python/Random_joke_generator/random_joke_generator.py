@@ -38,7 +38,6 @@ joke_text.config(state=tk.DISABLED)
 next_button = tk.Button(root, text="Next Joke", command=get_joke, font=("Helvetica", 12, "bold"), bg="#4CAF50", fg="white")
 next_button.pack(pady=10)
 
-# Load the first joke automatically
 get_joke()
 
 root.mainloop()
