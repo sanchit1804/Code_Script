@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app">
-    <header>
-      <h1>Weather App</h1>
-      <div class="controls">
-        <input id="q" type="text" placeholder="Enter city name" value="London">
-        <button id="search">Search</button>
-      </div>
-    </header>
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
 
-    <section id="output">
-      <div class="card" id="card">
-        <div class="left">
-          <img src="" alt="weather icon" id="icon" class="icon">
-          <div class="temp" id="temp">--°C</div>
-          <div class="cond" id="condition">--</div>
-        </div>
-        <div class="details">
-          <div class="row">
-            <div>
-              <div class="muted">Location</div>
-              <div id="location" class="small">--</div>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Weather Dashboard</h1>
+            <div class="search-container">
+                <input type="text" class="search-input" id="cityInput" placeholder="Search for a city..." autocomplete="off">
+                <button class="search-btn" id="searchBtn">🔍</button>
             </div>
-            <div>
-              <div class="muted">Local Time</div>
-              <div id="localtime" class="small">--</div>
-            </div>
-          </div>
-          <div class="meta">
-            <div class="m">
-              <div class="muted">Humidity</div>
-              <div id="humidity">--%</div>
-            </div>
-            <div class="m">
-              <div class="muted">Wind</div>
-              <div id="wind">-- kph</div>
-            </div>
-            <div class="m">
-              <div class="muted">Feels Like</div>
-              <div id="feelslike">--°C</div>
-            </div>
-          </div>
-          <div id="extra" class="small muted">Data from WeatherAPI.com</div>
-        </div>
-      </div>
-      <div id="loading" class="loader" style="display:none"><i></i></div>
-      <div id="error" style="display:none"></div>
-    </section>
-  </main>
+        </header>
 
-  <script src="script.js"></script>
+        <!-- Error Message -->
+        <div class="error-message" id="errorMessage"></div>
+
+        <!-- Main Weather Display -->
+        <div class="glass-card main-weather" id="mainWeather">
+            <h2 class="city-name" id="cityName">Loading...</h2>
+            <div class="date-time" id="dateTime"></div>
+            <div class="weather-icon" id="weatherIcon">⏳</div>
+            <div class="temperature">
+                <span id="temperature">--°</span>
+                <button class="temp-toggle" id="tempToggle">°F</button>
+            </div>
+            <div class="weather-description" id="weatherDescription">Loading weather data...</div>
+        </div>
+
+        <!-- Weather Details Grid -->
+        <div class="weather-details" id="weatherDetails">
+            <div class="glass-card detail-card">
+                <div class="detail-icon">🌡️</div>
+                <div class="detail-info">
+                    <h3>Feels Like</h3>
+                    <div class="value" id="feelsLike">--°</div>
+                </div>
+            </div>
+            <div class="glass-card detail-card">
+                <div class="detail-icon">💧</div>
+                <div class="detail-info">
+                    <h3>Humidity</h3>
+                    <div class="value" id="humidity">--%</div>
+                </div>
+            </div>
+            <div class="glass-card detail-card">
+                <div class="detail-icon">💨</div>
+                <div class="detail-info">
+                    <h3>Wind Speed</h3>
+                    <div class="value" id="windSpeed">-- m/s</div>
+                </div>
+            </div>
+            <div class="glass-card detail-card">
+                <div class="detail-icon">🎚️</div>
+                <div class="detail-info">
+                    <h3>Pressure</h3>
+                    <div class="value" id="pressure">-- hPa</div>
+                </div>
+            </div>
+            <div class="glass-card detail-card">
+                <div class="detail-icon">👁️</div>
+                <div class="detail-info">
+                    <h3>Visibility</h3>
+                    <div class="value" id="visibility">-- km</div>
+                </div>
+            </div>
+            <div class="glass-card detail-card">
+                <div class="detail-icon">☀️</div>
+                <div class="detail-info">
+                    <h3>UV Index</h3>
+                    <div class="value" id="uvIndex">--</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="glass-card forecast-section">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-container" id="forecastContainer">
+                <!-- Forecast cards will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
