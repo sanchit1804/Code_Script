@@ -23,7 +23,6 @@ def get_joke():
         joke_text.insert(tk.END, f"Error fetching joke:\n{e}")
         joke_text.config(state=tk.DISABLED)
 
-# --- GUI setup ---
 root = tk.Tk()
 root.title("Random Joke Generator")
 root.geometry("500x300")
