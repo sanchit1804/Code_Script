@@ -2,11 +2,6 @@
 
 A small Streamlit web application that allows users to **upload a CSV file**, **choose a machine learning model**, and **view model performance metrics interactively**.
 
-This fulfills the GitHub issue:
-
-> **"Build a small Streamlit app in `/Data_Science/` that allows uploading a CSV, choosing a model, and viewing metrics interactively."**
-
----
 
 ## 🚀 Features
 
@@ -24,4 +19,5 @@ pip install -r requirements.txt
 
 ▶️ Running the App
 streamlit run streamlit_app.py
+
 
